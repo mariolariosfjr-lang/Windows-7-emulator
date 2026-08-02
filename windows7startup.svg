@@ -1,0 +1,25 @@
+<svg width="220" height="220" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g filter="url(#glow)">
+    <path d="M35 40 L100 30 L100 95 L35 100 Z" fill="#f25022"/>
+    <path d="M115 28 L185 20 L185 90 L115 95 Z" fill="#7fba00"/>
+    <path d="M35 115 L100 110 L100 180 L35 190 Z" fill="#00a4ef"/>
+    <path d="M115 108 L185 103 L185 175 L115 180 Z" fill="#ffb900"/>
+  </g>
+
+  <animateTransform
+    attributeName="transform"
+    type="scale"
+    values="0.92;1.03;1"
+    dur="3s"
+    repeatCount="indefinite"/>
+</svg>
