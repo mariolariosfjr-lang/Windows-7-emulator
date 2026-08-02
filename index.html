@@ -8,12 +8,14 @@
         font-family: 'Verdana', sans-serif;
         color: #FFFFFF;
       }
-      #target {
-    position: absolute;
-    left: 200px;   /* X position */
-    top: 100px;    /* Y position */
-    width: 150px;
-    height: auto;
+      #logo {
+    position: fixed;
+    left: 50%;
+    top: 42%; /* Slightly above the middle like Windows 7 */
+    transform: translate(-50%, -50%);
+    width: 180px;
+    user-select: none;
+    pointer-events: none;
       }
     </style>
   </head>
@@ -28,6 +30,6 @@ font-size:26px;
 color:white;
 ">Starting Windows
     </div>
-    <img id="target" src="win7logo.png" alt="Windows 7 Logo">
+    <img id="logo" src="win7logo.png" alt="w7l">
   </body>
 </html>
